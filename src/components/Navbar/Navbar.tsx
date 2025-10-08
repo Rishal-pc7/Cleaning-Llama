@@ -6,7 +6,7 @@ import { Globe } from 'lucide-react'
 import MobNav from './MobNav'
 function Navbar() {
   return (
-    <div className="text-white mx-1 md:mx-4 w-[98%] h-10 md:h-14  backdrop-blur-lg bg-white/5 border border-white/30 rounded-xl shadow-lg absolute top-4 flex justify-between">
+    <div className="z-20 text-white mx-1 md:mx-4 w-[98%] h-10 md:h-14  backdrop-blur-lg bg-white/5 border border-white/30 rounded-xl shadow-lg absolute top-4 flex justify-between">
       <MobNav/>
       <div className="logo h-full w-1/2 md:w-[15%] justify-center md:justify-start items-center  flex">
         <Image src='/logo.jpg' alt='Cleaning Lama' className='w-28 h-8 md:h-[58px] md:w-[58px] md:rounded-l-lg' width={58} height={58}/>
