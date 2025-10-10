@@ -122,7 +122,10 @@
 .hero-section{
   background-image: url("/hero-bg.png");
   background-repeat: no-repeat;
-  
+}
+.services{
+  background-image: url("/overlay.jpg");
+  background-repeat: no-repeat;
 }
 @media (min-width: 300px) {
   /* Styles applied ONLY when the screen is 768px wide or wider */
