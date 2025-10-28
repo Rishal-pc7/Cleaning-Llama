@@ -18,7 +18,7 @@ function MobNav() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button className="md:hidden ml-2 [&_svg:not([class*='size-'])]:size-6" variant="ghost"><Menu size={30} color='#24B3DA' strokeWidth={3}/></Button>
+        <Button className="md:hidden ml-2 [&_svg:not([class*='size-'])]:size-6" variant="ghost"><Menu size={30} className="text-[#24B3DA]/80" strokeWidth={3}/></Button>
       </SheetTrigger>
       <SheetContent className="backdrop-blur-lg bg-white/5 border items border-white/30 text-white">
         <SheetHeader>

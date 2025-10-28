@@ -1,14 +1,19 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Manrope,Urbanist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 
 
-
-const poppins = Poppins({
-  variable: "--font-poppins",
+const manrope = Manrope({
+  variable: "--font-manrope",
   weight: ['400', '500', '600','700'],
+  subsets:['latin'] 
+});
+const urbanist = Urbanist({
+  variable: "--font-urbanist",
+  weight: ['400', '500', '600','700',"800"],
   subsets:['latin'] 
 });
 
@@ -25,10 +30,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} font-poppins  antialiased bg-slate-100`}
-      >
+        className={`${manrope.variable} ${urbanist.variable} font-manrope  antialiased bg-slate-100`}>
         <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
