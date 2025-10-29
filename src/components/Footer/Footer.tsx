@@ -10,7 +10,7 @@ function Footer() {
           <h2 className="font-semibold text-xl text-[#1C4177] mb-2 text-center md:text-start">Your trusted, professional cleaning service for a sparkling home or office. Book with us today!</h2>
           <div className="flex gap-6 md:gap-4 justify-center  text-[#1C4177]">
               <Link href="/" className="p-2 rounded-3xl border-2 border-[#1C4177] ">
-                <Whatsapp />
+                <Whatsapp className="w-6 h-6"/>
               </Link>
               <Link href="/" className="p-2 rounded-3xl border-2 border-[#1C4177] flex items-center">
                 <XTwitter />

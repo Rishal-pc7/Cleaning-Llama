@@ -26,7 +26,7 @@ function MobNav() {
         </SheetHeader>
         <Navlinks classes="md:hidden flex flex-col gap-6 p-4 gap-2 md:p-0 h-[75%]"/>
       <SheetFooter className="bottom-10 flex justify-center flex-row">
-        <Link href='/' className="p-2 rounded-3xl border-2 border-white "><Whatsapp/></Link>
+        <Link href='/' className="p-2 rounded-3xl border-2 border-white "><Whatsapp className="w-6 h-6"/></Link>
         <Link href='/' className="p-2 rounded-3xl border-2 border-white flex items-center"><XTwitter/></Link>
         <Link href='/' className="p-2 rounded-3xl border-2 border-white"><Mail /></Link>
         <Link href='/' className="p-2 rounded-3xl border-2 border-white"><Instagram/></Link>

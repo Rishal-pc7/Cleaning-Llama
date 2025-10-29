@@ -3,6 +3,7 @@ import { Manrope,Urbanist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import WhatsappButton from "@/components/Footer/WhatsappButton";
 
 
 
@@ -30,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${manrope.variable} ${urbanist.variable} font-manrope  antialiased bg-slate-100`}>
+        className={`${manrope.variable} ${urbanist.variable} relative font-manrope  antialiased bg-slate-100`}>
         <Navbar/>
         {children}
         <Footer/>

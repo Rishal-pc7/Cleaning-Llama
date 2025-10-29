@@ -17,8 +17,8 @@ function ContactSection() {
                 Reaching out is simple. Click the button below or visit our contact page to get started. If you have quick queries, feel free to connect with us directly via email, WhatsApp, or a quick call—whichever works best for you. Let Cleaning
                 Llama help you enjoy sparkling clean spaces with zero hassle. Your comfort and happiness are our top priorities!
               </p>
-              <Link href={"/contact"} className="rounded-4xl mt-5 bg-[#24B3DA] font-semibold w-fit text-center  flex items-center">
-                <MoveUpRight className="w-1/4 bg-white p-2 h-full rounded-4xl text-[#1C4177]" /> <span className="p-2 text-white text-lg">Contact Us</span>
+              <Link href={"/contact"} className="rounded-md mt-5 bg-[#24B3DA] text-white p-2 font-semibold w-fit text-center text-lg ">
+                Contact Us
               </Link>
             </div>
           </div>

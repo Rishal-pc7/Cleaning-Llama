@@ -4,7 +4,7 @@ import React, { useMemo } from 'react'
 const cardsData = [
   {
     icon: Clock,
-    iconProps: { strokeWidth: 3, size: 40, color: "#24B3DA" },
+    iconProps: { strokeWidth: 2, size: 30, color: "#24B3DA" },
     title: "30+",
     heading: "Years of Proven Experience",
     description:
@@ -12,7 +12,7 @@ const cardsData = [
   },
   {
     icon: CircleStar,
-    iconProps: { strokeWidth: 3, size: 40, color: "#24B3DA" },
+    iconProps: { strokeWidth: 2, size: 40, color: "#24B3DA" },
     title: "25000+",
     heading: "Proven Track Record",
     description:
@@ -20,7 +20,7 @@ const cardsData = [
   },
   {
     icon: Users,
-    iconProps: { strokeWidth: 3, size: 40, color: "#24B3DA" },
+    iconProps: { strokeWidth: 2, size: 40, color: "#24B3DA" },
     title: "50+",
     heading: "Dedicated, Indian Professionals",
     description:
@@ -28,7 +28,7 @@ const cardsData = [
   },
   {
     icon: MapPin,
-    iconProps: { strokeWidth: 3, size: 30, color: "#24B3DA" },
+    iconProps: { strokeWidth: 2, size: 40, color: "#24B3DA" },
     title: "100%",
     heading: "Focused On Saudi Arabia",
     description:
@@ -54,9 +54,11 @@ function AboutSection() {
           {cards.map((item, index) => {
             const Icon = item.icon;
             return (
-              <div key={item.heading + index} className="rounded-sm p-4  flex flex-col gap-3 items-center shadow-2xl">
+              <div key={item.heading + index} className="rounded-sm p-4  flex flex-col gap-3 items-center border-2 border-[#1C4177]/10 shadow-lg relative">
+                <div className="absolute top-0 -translate-y-1/2 bg-slate-100 px-1 left-1/2 -translate-x-1/2">
                 <Icon {...item.iconProps} />
-                <h1 className="text-[#24B3DA] font-extrabold text-3xl">{item.title}</h1>
+                </div> 
+                <h1 className="text-[#24B3DA] font-extrabold text-3xl mt-3">{item.title}</h1>
                 <h2 className="text-[#1C4177] font-semibold text-xl">{item.heading}</h2>
                 <p className="text-base md:text-lg  text-[#1C4177]">{item.description}</p>
               </div>
