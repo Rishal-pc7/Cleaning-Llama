@@ -34,6 +34,7 @@ export default function RootLayout({
         className={`${manrope.variable} ${urbanist.variable} relative font-manrope  antialiased bg-slate-100`}>
         <Navbar/>
         {children}
+        <WhatsappButton/>
         <Footer/>
       </body>
     </html>

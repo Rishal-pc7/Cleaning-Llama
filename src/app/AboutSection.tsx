@@ -1,6 +1,7 @@
 import { CircleStar, Clock,  MapPin, Users } from 'lucide-react';
 import Link from 'next/link';
 import React, { useMemo } from 'react'
+import { ScrollAnimation } from './Template';
 const cardsData = [
   {
     icon: Clock,
@@ -39,7 +40,7 @@ function AboutSection() {
   const cards = useMemo(() => cardsData, []);
 
   return (
-    <div className="w-full text-center py-15 px-4 md:px-10 ">
+    <ScrollAnimation initialOptions={{y:-40}} animatedOptions={{y:0}} className="w-full text-center py-15 px-4 md:px-10 ">
         <div className="content grid gap-3 md:gap-5 place-items-center">
           <h4 className="font-semibold text-lg md:text-xl text-[#1C4177]">About Us</h4>
           <h1 className="font-extrabold text-xl md:text-3xl text-[rgb(36,179,218)]">Our Professional Expertise Guarantees a Spotless Finish</h1>
@@ -54,18 +55,18 @@ function AboutSection() {
           {cards.map((item, index) => {
             const Icon = item.icon;
             return (
-              <div key={item.heading + index} className="rounded-sm p-4  flex flex-col gap-3 items-center border-2 border-[#1C4177]/10 shadow-lg relative">
+              <ScrollAnimation initialOptions={(index+1)%4==2 ? {y:-40}:{y:40}} animatedOptions={{y:0}} key={item.heading + index} className="rounded-sm p-4  flex flex-col gap-3 items-center border-2 border-[#1C4177]/10 shadow-lg relative">
                 <div className="absolute top-0 -translate-y-1/2 bg-slate-100 px-1 left-1/2 -translate-x-1/2">
                 <Icon {...item.iconProps} />
                 </div> 
                 <h1 className="text-[#24B3DA] font-extrabold text-3xl mt-3">{item.title}</h1>
                 <h2 className="text-[#1C4177] font-semibold text-xl">{item.heading}</h2>
                 <p className="text-base md:text-lg  text-[#1C4177]">{item.description}</p>
-              </div>
+              </ScrollAnimation>
             );
           })}
         </div>
-      </div>
+      </ScrollAnimation>
   )
 }
 

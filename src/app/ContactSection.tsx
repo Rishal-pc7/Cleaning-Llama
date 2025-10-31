@@ -2,12 +2,14 @@ import { MoveUpRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { ScrollAnimation } from './Template'
 
 function ContactSection() {
   return (
     <div className="contact flex md:flex-nowrap flex-wrap  w-full  md:h-[600px] h-auto gap-10 px-5 md:px-20 py-20 relative">
+
           <Image src={"/contact.png"} className="h-auto" alt="Contact cleaning llama" width={600} height={300} priority />
-          <div className="md:h-full h-auto flex flex-col items-start justify-center relative">
+      <ScrollAnimation initialOptions={{x:40}} animatedOptions={{x:0}} className='md:h-full h-auto flex flex-col items-start justify-center relative' >
             <div className="text-left flex flex-col gap-3">
               <h1 className="font-extrabold text-2xl md:text-3xl text-[#24B3DA] ">Ready for a cleaner home?</h1>
               <h2 className="font-semibold text-lg md:text-xl text-[#1C4177]">We love making spaces shine. Reach out and let’s get started!</h2>
@@ -21,7 +23,7 @@ function ContactSection() {
                 Contact Us
               </Link>
             </div>
-          </div>
+         </ScrollAnimation>
         </div>
   )
 }
