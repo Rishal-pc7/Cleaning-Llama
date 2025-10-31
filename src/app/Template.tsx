@@ -40,7 +40,7 @@ export function AnimatedCounter({ to,className,suffix}:{to:number,className?:str
   const spring = useSpring(count, {
     duration: duration * 1000,
     bounce: 0,
-    damping: 30,
+    damping: 35,
     stiffness: 100
   });
 
