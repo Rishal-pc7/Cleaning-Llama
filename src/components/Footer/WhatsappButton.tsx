@@ -12,7 +12,7 @@ function WhatsappButton() {
         >
           <Whatsapp className='h-13 w-13 bg-white py-2.5 z-10 rounded-full  size-7 text-[#1C4177]'/>
           <span className='group-focus/wtsp:inline-block text-center w-48 py-1.5 px-3 -ml-3 z-1 bg-white rounded-r-full shadow-lg hidden md:inline-block font-semibold text-lg text-[#1C4177]'>
-            Whatsapp Support
+            Whatsapp Booking
           </span>
         </Link>
         <Link 
