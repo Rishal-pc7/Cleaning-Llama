@@ -45,10 +45,13 @@ export async function POST(req: Request):Promise<Response> {
       status: 200,
       headers: { "Content-Type": "application/json" },
     });
-  } catch (err: any) {
-    return new Response(JSON.stringify({ error: err?.message ?? "Unknown error" }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" },
-    });
-  }
+  }catch (err) {
+  const errorMessage = typeof err === 'object' && err !== null && 'message' in err
+    ? (err as { message: string }).message
+    : "Unknown error";
+  return new Response(JSON.stringify({ error: errorMessage }), {
+    status: 500,
+    headers: { "Content-Type": "application/json" },
+  });
+}
 }
