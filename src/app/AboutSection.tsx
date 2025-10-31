@@ -1,12 +1,13 @@
 import { CircleStar, Clock,  MapPin, Users } from 'lucide-react';
 import Link from 'next/link';
 import React, { useMemo } from 'react'
-import { ScrollAnimation } from './Template';
+import { AnimatedCounter, ScrollAnimation } from './Template';
 const cardsData = [
   {
     icon: Clock,
     iconProps: { strokeWidth: 2, size: 30, color: "#24B3DA" },
-    title: "30+",
+    title: 30,
+    suffix:"+",
     heading: "Years of Proven Experience",
     description:
       "We have served Saudi Arabia for 30 years, giving us experience in handling every cleaning challenge with proven, reliable methods.",
@@ -14,7 +15,8 @@ const cardsData = [
   {
     icon: CircleStar,
     iconProps: { strokeWidth: 2, size: 40, color: "#24B3DA" },
-    title: "25000+",
+    title: 25000,
+    suffix:"+",
     heading: "Proven Track Record",
     description:
       "Our volume proves our reliability and customer loyalty. Join the tens of thousands of clients who trust us for a perfect clean every time.",
@@ -22,7 +24,8 @@ const cardsData = [
   {
     icon: Users,
     iconProps: { strokeWidth: 2, size: 40, color: "#24B3DA" },
-    title: "50+",
+    title: 50,
+    suffix:"+",
     heading: "Dedicated, Indian Professionals",
     description:
       "Professional Indian Staffs deliver meticulous, detailed cleaning with a trusted work ethic and a commitment to clear communication.",
@@ -30,7 +33,8 @@ const cardsData = [
   {
     icon: MapPin,
     iconProps: { strokeWidth: 2, size: 40, color: "#24B3DA" },
-    title: "100%",
+    title: 100,
+    suffix: "%",
     heading: "Focused On Saudi Arabia",
     description:
       "As a fully established, local business, we understand the standards and specific needs of communities across Riyadh and Jeddah",
@@ -59,7 +63,7 @@ function AboutSection() {
                 <div className="absolute top-0 -translate-y-1/2 bg-slate-100 px-1 left-1/2 -translate-x-1/2">
                 <Icon {...item.iconProps} />
                 </div> 
-                <h1 className="text-[#24B3DA] font-extrabold text-3xl mt-3">{item.title}</h1>
+                <AnimatedCounter to={item.title} suffix={item.suffix} className="text-[#24B3DA] font-extrabold text-3xl mt-3"></AnimatedCounter>
                 <h2 className="text-[#1C4177] font-semibold text-xl">{item.heading}</h2>
                 <p className="text-base md:text-lg  text-[#1C4177]">{item.description}</p>
               </ScrollAnimation>
