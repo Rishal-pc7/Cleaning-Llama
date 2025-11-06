@@ -14,7 +14,8 @@ function ContactSection() {
               <h2 className="font-semibold text-lg md:text-xl text-[#1C4177]">We love making spaces shine. Reach out and let’s get started!</h2>
               <p className="font-medium text-base md:text-lg text-[#1C4177]">
                 At Cleaning Llama, we believe everyone deserves a fresh, healthy space to live and work. Our mission goes beyond just scrubbing and sweeping – it’s about creating environments that uplift, inspire, and promote wellbeing
-                <br />
+              </p>
+              <p className="font-medium text-base md:text-lg text-[#1C4177]">
                 Reaching out is simple. Click the button below or visit our contact page to get started. If you have quick queries, feel free to connect with us directly via email, WhatsApp, or a quick call—whichever works best for you. Let Cleaning
                 Llama help you enjoy sparkling clean spaces with zero hassle. Your comfort and happiness are our top priorities!
               </p>

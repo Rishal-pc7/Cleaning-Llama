@@ -1,0 +1,47 @@
+{
+  "contact": {
+    "desc1": "At Cleaning Llama, we believe everyone deserves a fresh, healthy space to live and work. Our mission goes beyond just scrubbing and sweeping – it’s about creating environments that uplift, inspire, and promote wellbeing",
+    "desc2": "Reaching out is simple. Click the button below or visit our contact page to get started. If you have quick queries, feel free to connect with us directly via email, WhatsApp, or a quick call—whichever works best for you. Let Cleaning Llama help you enjoy sparkling clean spaces with zero hassle. Your comfort and happiness are our top priorities!",
+    "heading": "Ready for a cleaner home?",
+    "pageHeading": "Contact Us",
+    "subheading": "We love making spaces shine. Reach out and let’s get started!"
+  },
+  "home": {
+    "about_description": "We are a professional cleaning service dedicated to delivering a flawless and healthy environment for your home or office. Our expert team provides a comprehensive clean with unmatched attention to detail, so you can enjoy a spotless space.",
+    "about_heading": "Our Professional Expertise Guarantees a Spotless Finish",
+    "aboutItem1_heading": "Years of Proven Experience",
+    "aboutItem1_subheading": "We have served Saudi Arabia for 30 years, giving us experience in handling every cleaning challenge with proven, reliable methods.",
+    "aboutItem2_heading": "Dedicated, Indian Professionals",
+    "aboutItem2_subheading": "Professional Indian Staffs deliver meticulous, detailed cleaning with a trusted work ethic and a commitment to clear communication.",
+    "aboutItem3_heading": "Proven Track Record",
+    "aboutItem3_subheading": "Our volume proves our reliability and customer loyalty. Join the tens of thousands of clients who trust us for a perfect clean every time.",
+    "aboutItem4_heading": "Focused On Saudi Arabia",
+    "aboutItem4_subheading": "As a fully established, local business, we understand the standards and specific needs of communities across Riyadh and Jeddah",
+    "aboutlink": "Why Choose Us",
+    "aboutTitle": "About Us",
+    "hero_heading": "Expert Cleaning for Discerning Homes",
+    "herolink": "Book Now",
+    "hero_subheading": "We clean meticulously so you can enjoy sophisticated elegance.",
+    "service6_heading": "Air Conditioner Cleaning",
+    "service7_heading": "Furniture Moving",
+    "services_heading": "Our Professional Cleaning Services",
+    "services_subheading": "We offer a wide range of expert cleaning solutions tailored to your unique needs with quality and professionalism.",
+    "sevice1_heading": "Furniture Cleaning Service",
+    "sevice1_subheading": "Professional furniture cleaning for sofas, carpets, mattresses, and more-reviving freshness, removing stains, and enhancing home hygiene.",
+    "sevice2_heading": "Hourly Cleaning Service",
+    "sevice2_subheading": "Our Hourly Cleaning Service offers flexible, high-quality cleaning, at Floor, Kitchen & Utensils, and Bathroom Tasks, Including heavier duties.",
+    "sevice3_heading": "Rehabilitation Cleaning",
+    "sevice3_subheading": "Our Rehabilitation Cleaning Service include Floor, Facade, Window, Kitchen, Bathroom, and Tank Cleaning (Upper & Lower).",
+    "sevice4_heading": "Pest Control",
+    "sevice4_subheading": "Professional Pest Control Services Eliminating all types of Pests and Insects—Delivered with Expert Care and Reliability.",
+    "sevice5_heading": "Home Maintainance",
+    "sevice5_subheading": "Comprehensive Home Maintenance Covering Electrical, Plumbing, AC repair, AC cleaning and Leak Detection for Lasting Comfort and Safety.",
+    "sevice6_subheading": "Eco-safe air conditioner cleaning that removes dust, sanitizes coils and filters, boosts cooling efficiency, and protects your family’s health.",
+    "sevice7_subheading": "Safe and efficient furniture moving service—ensuring careful handling and protection of your belongings."
+  },
+  "navbar": {
+    "navlink_1": "Home",
+    "navlink_2": "About",
+    "navlink_3": "Contact"
+  }
+}

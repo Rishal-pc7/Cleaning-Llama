@@ -29,7 +29,6 @@ export function ScrollAnimation({children,className,initialOptions,animatedOptio
   )
 }
 
-// ...existing code...
 
 export function AnimatedCounter({ to,className,suffix}:{to:number,className?:string,suffix?:string}) {
   const from:number=0

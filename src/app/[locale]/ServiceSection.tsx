@@ -8,7 +8,7 @@ const servicesData = [
     image: "/furniture-cleaning.png",
     heading: "Furniture Cleaning Service",
     description:
-      "Our Hourly Cleaning Service offers flexible, high-quality cleaning, at Floor, Kitchen & Utensils, and Bathroom Tasks, Including heavier duties.",
+      "Professional furniture cleaning for sofas, carpets, mattresses, and more-reviving freshness, removing stains, and enhancing home hygiene.",
   },
   {
     image: "/hourly.png",
