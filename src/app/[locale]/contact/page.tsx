@@ -4,7 +4,7 @@ import { Template } from '../Template'
 import { useTranslations } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
 
-function page({params}:Readonly<{params:Promise<{ locale: string }>}>) {
+function Contact({params}:Readonly<{params:Promise<{ locale: string }>}>) {
   const t=useTranslations("contact")
   const {locale}=use(params)
   setRequestLocale(locale)
@@ -20,4 +20,4 @@ function page({params}:Readonly<{params:Promise<{ locale: string }>}>) {
   )
 }
 
-export default page
+export default Contact
