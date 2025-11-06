@@ -68,7 +68,7 @@ export function AnimatedCounter({ to,className,suffix}:{to:number,className?:str
       transition={{ duration: 0.5 }}
       className={className}
     >
-      <motion.span>{display}</motion.span>
+      <motion.span className='font-urbanist'>{display}</motion.span>
     </motion.h1>
   );
 }

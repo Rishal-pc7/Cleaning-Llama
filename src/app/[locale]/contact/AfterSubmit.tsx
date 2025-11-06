@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/dialog"
 import { DialogClose } from '@radix-ui/react-dialog';
 import { Button } from '@/components/ui/button';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 interface Props {
   isOpen: boolean;
   setIsOpen: (open: boolean) => void;

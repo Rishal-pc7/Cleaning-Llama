@@ -1,10 +1,36 @@
 {
+  "about": {
+    "chooseus1_desc": "Our Workers are Skilled, background-checked Indian professionals dedicated to quality and trust.",
+    "chooseus1_heading": "Expert Team",
+    "chooseus2_desc": "We’re punctual, friendly, professional, and always deliver a respectful, positive experience every visit.",
+    "chooseus2_heading": "Reliable & Respectful",
+    "chooseus3_desc": "High satisfaction, trusted reputation, and happy clients—we leave every space sparkling and inviting.",
+    "chooseus3_heading": "Spotless Track Record",
+    "chooseus4_desc": "We use advanced equipment, safe products, and careful methods to ensure perfect, healthy results",
+    "chooseus4_heading": "Modern Tools & Safe Methods",
+    "chooseus_heading": "Why Choose Us",
+    "desc1": "At Cleaning Llama, we believe a spotless space fuels a happier, healthier life. Proudly based in Saudi Arabia, our dedicated team of experienced professionals—each trained in top-quality standards—delivers reliable, detail-driven cleaning with a smile. Whether it’s your home, office, or commercial space, we’re here to make every corner shine, so you can focus on what matters most.",
+    "heading": "Your Trusted Cleaning Partners in Saudi Arabia",
+    "link": "Request Our Service Now",
+    "mission_heading": "Our Mission",
+    "mission_desc": "To deliver exceptional cleaning services that create healthier, happier environments for our clients. We are committed to reliability, transparency, and utmost care in every corner we clean—always striving for excellence and a personal touch.",
+    "story_desc": "Cleaning Llama began with a simple mission: to raise the standard of cleanliness and customer care in Saudi Arabia. Founded by a team who understands the value of a fresh, welcoming space, we’ve grown from a small operation to a trusted local brand. Over the years, our reputation has been built on integrity, dedication, and consistently delivering exceptional results",
+    "story_heading": "Our Story",
+    "vision_desc": "To be Saudi Arabia’s most trusted cleaning service, renowned for professionalism, integrity, and innovative solutions. We aim to elevate the standard of cleanliness while building lasting relationships with both clients and our dedicated team.",
+    "vision_heading": "Our Vision"
+  },
   "contact": {
     "desc1": "At Cleaning Llama, we believe everyone deserves a fresh, healthy space to live and work. Our mission goes beyond just scrubbing and sweeping – it’s about creating environments that uplift, inspire, and promote wellbeing",
     "desc2": "Reaching out is simple. Click the button below or visit our contact page to get started. If you have quick queries, feel free to connect with us directly via email, WhatsApp, or a quick call—whichever works best for you. Let Cleaning Llama help you enjoy sparkling clean spaces with zero hassle. Your comfort and happiness are our top priorities!",
     "heading": "Ready for a cleaner home?",
     "pageHeading": "Contact Us",
-    "subheading": "We love making spaces shine. Reach out and let’s get started!"
+    "subheading": "We love making spaces shine. Reach out and let’s get started!",
+    "input1": "Full Name",
+    "input2": "Email Address",
+    "input3": "Phone Number",
+    "input4": "Message",
+    "placeholder1": "Your Message",
+    "submit":"Submit"
   },
   "home": {
     "about_description": "We are a professional cleaning service dedicated to delivering a flawless and healthy environment for your home or office. Our expert team provides a comprehensive clean with unmatched attention to detail, so you can enjoy a spotless space.",
@@ -43,5 +69,17 @@
     "navlink_1": "Home",
     "navlink_2": "About",
     "navlink_3": "Contact"
-  }
+  },
+  "footer": {
+    "copyright": "2025 Cleaning Llama. All rights reserved",
+    "heading": "Your trusted, professional cleaning service for a sparkling home or office. Book with us today!",
+    "link1": "Home",
+    "link2": "About",
+    "link3": "Contact",
+    "quickLinks": "Quick Links"
+  },
+  "popup":{
+    "whatsapp":"Whatsapp Booking",
+    "request":"Request Service"
+  }  
 }

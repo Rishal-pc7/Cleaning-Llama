@@ -10,6 +10,7 @@ import { z } from "zod"
 import { ScrollAnimation } from "../Template"
 import { Success } from "./AfterSubmit"
 import { useState } from "react"
+import { useTranslations } from "next-intl"
 
 const formSchema = z.object({
   fullname: z.string().min(2, {
@@ -22,39 +23,35 @@ const formSchema = z.object({
   .regex(/^[0-9()+-\s]+$/, {message:"Invalid phone number"}),
   message: z.string().min(5, { message: "Message must be at least 5 characters." }),
 })
-const forms=[
-    {
-        name:"fullname",
-        label:"Full Name",
-        placeholder:"Full Name",
-        type:"text",
-        key:"username",
-    },
-    {
-        name:"email",
-        label:"Email Address",
-        placeholder:"Email Address",
-        type:"email",
-        key:"email",
-    },
-    {
-        name:"phone",
-        label:"Phone Number",
-        placeholder:"Phone Number",
-        type:"text",
-        key:"phone",
-    },
-    {
-        name:"message",
-        label:"Message",
-        placeholder:"Your Message",
-        type:"text",
-        key:"message",
-
-    }
-
-]
-function ContactForm() {
+function ContactForm({locale}:{locale:string}) {
+  const t=useTranslations("contact")
+  const forms=[
+      {
+          name:"fullname",
+          label:t("input1"),
+          type:"text",
+          key:"username",
+      },
+      {
+          name:"email",
+          label:t("input2"),
+          type:"email",
+          key:"email",
+      },
+      {
+          name:"phone",
+          label:t("input3"),
+          type:"text",
+          key:"phone",
+      },
+      {
+          name:"message",
+          label:t("input4"),
+          type:"text",
+          key:"message",
+      }
+  ]
+  
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -88,8 +85,8 @@ function ContactForm() {
   
   return (
     <div className="p-10 md:p-20 max-w-3xl mx-auto">
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+    <Form {...form} >
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 ">
         {
             forms.map((f)=>(
               <ScrollAnimation key={f.key} initialOptions={{y:40}} animatedOptions={{y:0}}>
@@ -97,11 +94,11 @@ function ContactForm() {
                  control={form.control}
                  name={f.name as keyof z.infer<typeof formSchema>}
                  render={({ field }) => (
-                <FormItem>
+                <FormItem className={`${locale=="ar"&&"flex flex-col items-end"}`}>
                    <FormLabel className="font-semibold font-urbanist text-[#1C4177] text-lg">{f.label}</FormLabel>
                    <FormControl>
-                       {f.name==="message" ? <Textarea key={f.key} placeholder={f.placeholder} {...field} /> :
-                       <Input key={f.key+5555} placeholder={f.placeholder} type={f.type} {...field} />
+                       {f.name==="message" ? <Textarea key={f.key} className="font-urbanist" {...field} /> :
+                       <Input key={f.key+5555}  type={f.type} className="font-urbanist" {...field} />
                  }
                     </FormControl>
                     <FormMessage />
@@ -113,7 +110,7 @@ function ContactForm() {
             ))
         }
         
-        <Button type="submit">Submit</Button>
+        <Button type="submit">{t("submit")}</Button>
       </form>
     </Form>
     <Success isOpen={showDialog} setIsOpen={setShowDialog} error={error}/> 
