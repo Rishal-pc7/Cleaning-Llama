@@ -43,12 +43,12 @@ function AboutSection({locale}:{locale:string}) {
   return (
     <ScrollAnimation initialOptions={{y:-40}} animatedOptions={{y:0}} className="w-full text-center py-15 px-4 md:px-10 ">
         <div className="content grid gap-3 md:gap-5 place-items-center">
-          <h4 className="font-semibold text-lg md:text-xl text-[#1C4177]">{t('aboutTitle')}</h4>
-          <h1 className="font-extrabold text-xl md:text-3xl text-[rgb(36,179,218)]">{t('about_heading')}</h1>
-          <p className="md:w-[50%] text-base md:text-lg text-[#1C4177]">
+          <h4 className="font-semibold text-lg md:text-xl text-brandBlue">{t('aboutTitle')}</h4>
+          <h1 className="font-extrabold text-xl md:text-3xl text-brandCyan">{t('about_heading')}</h1>
+          <p className="md:w-[50%] text-base md:text-lg text-brandBlue">
             {t('about_description')}
           </p>
-          <Link href={"/contact"} className="text-base md:text-lg text-[#1C4177] underline">
+          <Link href={"/contact"} className="text-base md:text-lg text-brandBlue underline">
             {t('aboutlink')}
           </Link>
         </div>
@@ -56,13 +56,13 @@ function AboutSection({locale}:{locale:string}) {
           {cards.map((item, index) => {
             const Icon = item.icon;
             return (
-              <ScrollAnimation initialOptions={(index+1)%4==2 ? {y:-40}:{y:40}} animatedOptions={{y:0}} key={item.heading + index} className="rounded-sm p-4 w-full flex flex-col gap-3 items-center border-2 border-[#1C4177]/10 shadow-lg relative">
+              <ScrollAnimation initialOptions={(index+1)%4==2 ? {y:-40}:{y:40}} animatedOptions={{y:0}} key={item.heading + index} className="rounded-sm p-4 w-full flex flex-col gap-3 items-center border-2 border-brandBlue/10 shadow-lg relative">
                 <div className="absolute top-0 -translate-y-1/2 bg-slate-100 px-1 left-1/2 -translate-x-1/2">
                 <Icon {...item.iconProps} />
                 </div> 
-                <AnimatedCounter to={item.title} suffix={item.suffix} className="text-[#24B3DA]  font-extrabold text-3xl mt-3"></AnimatedCounter>
-                <h2 className="text-[#1C4177] font-semibold text-xl">{item.heading}</h2>
-                <p className="text-base md:text-lg  text-[#1C4177]">{item.description}</p>
+                <AnimatedCounter to={item.title} suffix={item.suffix} className="text-brandCyan  font-extrabold text-3xl mt-3"></AnimatedCounter>
+                <h2 className="text-brandBlue font-semibold text-xl">{item.heading}</h2>
+                <p className="text-base md:text-lg  text-brandBlue">{item.description}</p>
               </ScrollAnimation>
             );
           })}

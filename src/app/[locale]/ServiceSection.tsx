@@ -48,8 +48,8 @@ function ServiceSection({locale}:{locale:string}) {
   return (
     <ScrollAnimation initialOptions={{y:-40}} animatedOptions={{y:0}} className="services flex flex-col items-center  text-center min-h-screen gap-10 pt-10 pb-8 relative">
         <div className="heading z-10 flex flex-col gap-4">
-          <h1 className="font-extrabold text-xl md:text-2xl text-[#1C4177]">{t('services_heading')}</h1>
-          <h4 className="font-semibold text-base md:text-xl text-[#24B3DA]">{t('services_subheading')}</h4>
+          <h1 className="font-extrabold text-xl md:text-2xl text-brandBlue">{t('services_heading')}</h1>
+          <h4 className="font-semibold text-base md:text-xl text-brandCyan">{t('services_subheading')}</h4>
         </div>
         <ServiceCarousel display="md:hidden" services={services} />
     <div className="hidden md:flex cards gap-x-5 flex-wrap gap-y-8  w-full justify-center place-items-center-safe z-10 p-5">
@@ -67,8 +67,8 @@ function ServiceSection({locale}:{locale:string}) {
                   loading="lazy"
                 />
                 <div className="content p-4 grid gap-3">
-                  <h1 className="font-extrabold  text-2xl md:text-xl text-[#24B3DA]">{item.heading}</h1>
-                  <h2 className="font-semibold text-base  text-[#1C4177]">{item.description}</h2>
+                  <h1 className="font-extrabold  text-2xl md:text-xl text-brandCyan">{item.heading}</h1>
+                  <h2 className="font-semibold text-base  text-brandBlue">{item.description}</h2>
                 </div>
               </CardContent>
             </Card>

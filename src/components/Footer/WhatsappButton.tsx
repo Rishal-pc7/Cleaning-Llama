@@ -9,7 +9,7 @@ function WhatsappButton({locale}:{locale:string}) {
   return (
     <div className='group grid p-2 gap-2 z-20 fixed bottom-8 left-0 md:left-auto  -translate-x-5 md:translate-x-0 md:right-2'>
         <Link 
-          href='' 
+          href='https://wa.me/+966500253511/?text=Service%20Enquiry' 
           className='relative text-lg font-semibold   flex items-center group/wtsp'
         >
           <Whatsapp className='h-13 w-13 bg-white py-2.5 z-10 rounded-full  size-7 text-[#1C4177]'/>

@@ -41,6 +41,7 @@ export default async function RootLayout({
   if(!hasLocale(routing.locales,locale)){
     notFound()
   }
+  
   const classNames=locale=="en" ? `${manrope.variable}  font-manrope en_h1` : `${scheherazade_new.variable} font-scheherazade-new`
   return (
 
@@ -48,7 +49,7 @@ export default async function RootLayout({
       <body
         className={`${classNames} ${urbanist.variable} relative overflow-x-hidden antialiased bg-slate-100`}>
         <NextIntlClientProvider>
-        <Navbar/>
+        <Navbar locale={locale}/>
         {children}
         <WhatsappButton locale={locale}/>
         <Footer locale={locale}/>

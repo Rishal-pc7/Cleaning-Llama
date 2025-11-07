@@ -27,8 +27,8 @@ export function ServiceCarousel({display,services}:Readonly<{display:string,serv
               <CardContent className="p-0">
                 <Image src={item.image} alt="" className="rounded-t-md w-full" width={500} height={50}/>
                           <div className="content p-4 grid gap-3">
-                            <h1 className="font-extrabold text-lg text-[#24B3DA]">{item.heading}</h1>
-                            <h2 className="font-semibold text-lg  text-[#1C4177]">{item.description}</h2>
+                            <h1 className="font-extrabold text-lg text-brandCyan">{item.heading}</h1>
+                            <h2 className="font-semibold text-lg  text-brandBlue">{item.description}</h2>
                           </div> 
               </CardContent>
             </Card>

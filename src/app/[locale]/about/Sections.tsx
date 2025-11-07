@@ -73,11 +73,11 @@ export function OurVisionandMission({locale}:{locale:string}){
     const t=useTranslations("about")
     return (
         <div className="relative grid auto-rows-min grid-rows-[.5fr_1fr] md:grid-rows-none md:grid-cols-2 p-8 md:p-20 gap-5 md:gap-10">
-        <ScrollAnimation initialOptions={{x:-40}} animatedOptions={{x:0}} className={`${locale=="ar"?"md:order-2 items-end text-right":"md:order-1"}`+' md:h-[50vh] w-full flex flex-col gap-3 order-2'}>
+        <ScrollAnimation initialOptions={{x:-40}} animatedOptions={{x:0}} className={`${locale=="ar"?"md:order-2 items-end text-right":"md:order-1"} md:h-[50vh] w-full flex flex-col gap-3 order-2`}>
             <h1 className='text-[#24B3DA] font-extrabold text-3xl'>{t("vision_heading")}</h1>
-            <h4 className={`${locale=="ar"&&"text-right"}`+' text-[#1C4177] font-semibold text-lg'}>{t("vision_desc")}</h4>
+            <h4 className={`${locale=="ar"&&"text-right"} text-[#1C4177] font-semibold text-lg`}>{t("vision_desc")}</h4>
             <h1 className='text-[#24B3DA] font-extrabold text-3xl'>{t("mission_heading")}</h1>
-            <h4 className={`${locale=="ar"&&"text-right"}`+' text-[#1C4177] font-semibold text-lg'}>{t("mission_desc")}</h4>
+            <h4 className={`${locale=="ar"&&"text-right"} text-[#1C4177] font-semibold text-lg`}>{t("mission_desc")}</h4>
         </ScrollAnimation>
         <ScrollAnimation initialOptions={{x:40}} animatedOptions={{x:0}} className={`${locale=="ar"?"md:order-1":"md:order-2"}`+' md:h-[50vh] w-full relative order-1'}>
             <Image src={heroImg} alt='Our Vision'  loading='lazy' className='h-full relative object-cover object-center' sizes="(max-width: 768px) 100vw, 50vw"/>
