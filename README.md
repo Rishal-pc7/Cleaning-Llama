@@ -73,7 +73,7 @@ The project is optimized for deployment on Vercel.
 
 * **Role:** Freelance Full-Stack Developer
 * **Tech Stack:** Next.js, React, Tailwind CSS, Node.js
-* **LinkedIn:** [Link to your LinkedIn]
+* **[LinkedIn](https://www.linkedin.com/in/rishal-p/)**
 
 ---
 
