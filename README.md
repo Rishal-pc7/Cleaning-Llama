@@ -13,12 +13,12 @@ A high-performance, bilingual (Arabic/English) web platform developed for a lead
 ---
 
 ## 📖 Table of Contents
-- [About the Project](#about-the-project)
-- [Key Features](#key-features)
-- [Technologies Used](#technologies-used)
-- [Deployment](#deployment)
-- [Author](#author)
-- [License](#license--ownership)
+- About the Project
+- Key Features
+- Technologies Used
+- Deployment
+- Author
+- License
 
 ---
 
