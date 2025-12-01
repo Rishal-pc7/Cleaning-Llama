@@ -19,7 +19,7 @@ export default function Home({params}:Readonly<{params:Promise<{ locale: string 
     
       <div className={`${locale=="ar"? "justify-end":"justify-start"} relative h-[90vh] w-full flex pb-20 md:pb-0  items-end-safe md:items-center text-white`}>      
         <Image src={heroImg} placeholder="blur"  alt="Clean modern interior" className="absolute inset-0 object-cover  object-[63%] w-full h-full z-0"  fill  priority unoptimized  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"/>
-        <div className="absolute inset-0 bg-black/30  z-10"></div>
+        <div className="absolute inset-0 bg-black/30 md:bg-gradient-to-br from-1% to-30% from-white/30  to-black/30  z-10"></div>
         <Template className={`${locale=="ar"&&"items-end text-right "} content md:p-5 p-3 z-10 flex flex-col gap-3 md:gap-5`}>
           <h1 className={`${locale=="ar"?"text-2xl":"text-xl"} font-bold  md:text-4xl`}>{t('hero_heading')}</h1>
           <h5 className={`${locale=="ar"?"md:text-2xl":"md:text-xl"} font-medium text-base`}>{t('hero_subheading')}</h5>

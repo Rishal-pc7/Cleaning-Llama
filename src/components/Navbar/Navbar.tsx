@@ -8,14 +8,16 @@ import {LangButton, NavbarClient} from './NavClientActions'
 function Navbar({locale}:{locale:string}) {
   
   return (
+    <>
+      <div className="logo w-[30%] hidden absolute top-4 z-20 items-center md:flex">
+        <Image src='/logo.png' alt='Cleaning Lama' className='w-32 h-auto' width={100} height={40}/>
+      </div>
     <NavbarClient>
       <MobNav  locale={locale}/>
-      <div className="logo h-full w-1/2 md:w-[15%] justify-center md:justify-start items-center  flex">
-        <Image src='/logo.jpg' alt='Cleaning Lama' className='w-18 h-8 md:h-[40px] md:w-[40px] md:rounded-l-xl' width={40} height={40}/>
-      </div>
-      <Navlinks  locale={locale} classes='md:flex hidden w-[75%] justify-between'/>
+      <Navlinks  locale={locale} classes='md:flex  hidden w-full justify-between'/>
       <LangButton classes={"md:hidden flex"} val={locale=="ar"?"en":"ar"}/>
     </NavbarClient>
+    </>
   )
 }
 

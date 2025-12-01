@@ -36,7 +36,7 @@ export function  NavbarClient({children}:Readonly<{children:React.ReactNode}>){
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return(
-    <div className={`fixed z-20 ${scroll?"text-brandBlue":"text-white"} right-1/2 translate-x-1/2 min-w-[70%] md:min-w-[35%] h-10 md:h-10  backdrop-blur-lg bg-white/5 border border-white/30 rounded-xl shadow-lg top-4 flex justify-between`}>
+    <div className={`fixed z-20 ${scroll?"text-brandBlue":"text-white"} right-1/2 translate-x-1/2 min-w-[70%] md:min-w-[30%] h-10 md:h-10  backdrop-blur-lg bg-white/5 border border-white/30 rounded-xl shadow-lg top-4 flex justify-between`}>
      {children}
     </div> 
   )
