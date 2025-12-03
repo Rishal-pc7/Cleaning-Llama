@@ -28,6 +28,9 @@ const scheherazade_new=Scheherazade_New({
 export const metadata: Metadata = {
   title: "Llama Cleaning",
   description: "Saudi Arabia's premier cleaning service. 30 years, 25,000 happy clients, and professional Indian teams. Get your reliable, detailed cleaning quote today.",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default async function RootLayout({
