@@ -26,10 +26,53 @@ const scheherazade_new=Scheherazade_New({
   subsets:['arabic']
 })
 export const metadata: Metadata = {
-  title: "Llama Cleaning",
-  description: "Saudi Arabia's premier cleaning service. 30 years, 25,000 happy clients, and professional Indian teams. Get your reliable, detailed cleaning quote today.",
+  title: {default:"Cleaning Llama - Saudi Arabia's Trusted Cleaning Service",template:"%s | Cleaning Llama"},
+  description: "Saudi Arabia’s trusted home & facility experts. 30 years exp. We offer furniture cleaning, AC maintenance, pest control, & hourly housekeeping by professional Indian teams.",
   icons: {
     icon: "/icon.png",
+    apple: "/icon.png",
+  },
+  metadataBase: new URL("https://cleaningllama.com/"),
+  keywords: [
+    // Brand & Location
+    'Cleaning Llama',
+    'Cleaning Services Riyadh',
+    'Facility Management Saudi Arabia',
+    
+    // The "Maid" Replacements
+    'Hourly Cleaning Service',
+    'Professional Housekeeping',
+    'Residential Cleaning Teams',
+    'Indian Cleaning Staff Riyadh',
+
+    // Specific Services (High Value)
+    'Furniture Cleaning Service',
+    'Sofa and Carpet Shampoo',
+    'AC Cleaning Riyadh',
+    'Split AC Maintenance',
+    'Pest Control Services KSA',
+    'Cockroach and Bed Bug Control',
+    
+    // "Rehabilitation" synonyms (What people actually search)
+    'Rehabilitation Cleaning',
+    'Post-construction cleaning',
+    'Move-in Deep Cleaning',
+    
+    // Moving & Maintenance
+    'Furniture Moving Service',
+    'Home Maintenance Riyadh',
+    'Handyman Services KSA'
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
