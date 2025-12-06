@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     icon: "/icon.png",
     apple: "/icon.png",
   },
-  metadataBase: new URL("https://cleaningllama.com/"),
+  metadataBase: new URL("https://cleaningllamaksa.com/"),
   keywords: [
     // Brand & Location
     'Cleaning Llama',
