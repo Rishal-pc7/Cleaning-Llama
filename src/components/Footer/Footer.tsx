@@ -35,7 +35,7 @@ function Footer({locale}:{locale:string}) {
       </div>
       </div>  
       <div className="brand text-center mb-10">
-        <h1 className="font-extrabold text-5xl md:text-9xl font-urbanist text-[#1C4177]/20">Cleaning Llama.</h1>
+        <h1 className="font-extrabold text-5xl md:text-9xl font-urbanist text-[#1C4177]/20">Cleaning Lama.</h1>
       </div>
       <footer className="text-[#1C4177] flex flex-col items-center justify-center h-5 p-4">
         <div className="text-center">

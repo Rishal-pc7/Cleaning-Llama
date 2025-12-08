@@ -63,7 +63,9 @@
     "service5_heading": "Home Maintainance",
     "service5_subheading": "Comprehensive Home Maintenance Covering Electrical, Plumbing, AC repair, AC cleaning and Leak Detection for Lasting Comfort and Safety.",
     "service6_subheading": "Eco-safe air conditioner cleaning that removes dust, sanitizes coils and filters, boosts cooling efficiency, and protects your family’s health.",
-    "service7_subheading": "Safe and efficient furniture moving service—ensuring careful handling and protection of your belongings."
+    "service7_subheading": "We provide full dismantling, secure high-quality packaging, and precise reassembly at your new location to ensure your valuables arrive without a scratch.",
+    "service8_heading": "Masjid & Prayer Hall Cleaning",
+    "service8_subheading": "We provide specialized deep cleaning for carpets, wudu areas, and high ceilings using respectful, non-disruptive teams. Available for one-time deep cleans or monthly contracts."
   },
   "navbar": {
     "navlink_1": "Home",
@@ -71,7 +73,7 @@
     "navlink_3": "Contact"
   },
   "footer": {
-    "copyright": "2025 Cleaning Llama. All rights reserved",
+    "copyright": "2025 Cleaning Lama. All rights reserved",
     "heading": "Your trusted, professional cleaning service for a sparkling home or office. Book with us today!",
     "link1": "Home",
     "link2": "About",

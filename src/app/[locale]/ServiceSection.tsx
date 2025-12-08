@@ -42,6 +42,11 @@ function ServiceSection({locale}:{locale:string}) {
       heading: t('service7_heading'),
       description:t('service7_subheading'),
     },
+    {
+      image: "/masjidCleaning.png",
+      heading: t('service8_heading'),
+      description:t('service8_subheading'),
+    },
   ];
   
   const services = useMemo(() => servicesData, []);

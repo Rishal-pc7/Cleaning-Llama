@@ -9,14 +9,32 @@ import {Template} from "./Template";
 import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
 import { useTranslations } from "next-intl";
+import Script from "next/script";
 export default function Home({params}:Readonly<{params:Promise<{ locale: string }>}>) {
   const {locale}=use(params)
   const t=useTranslations("home")  
   setRequestLocale(locale)
-  
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Cleaning Lama",
+    "image": [
+      "https://www.cleaningllamaksa.com/furniture-cleaning.png", // Main image
+    ],
+    "@id": "https://www.cleaningllamaksa.com",
+    "url": "https://www.cleaningllamaksa.com",
+    "telephone": "+966-50-025-3511", // YOUR REAL NUMBER HERE (Crucial for Call Button)
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "salah Ad Din Street Al Ayyubi Road",
+      "addressLocality": "Riyadh",
+      "postalCode": "12812",
+      "addressCountry": "SA"
+    },
+  }
   return (
     <>
-    
+      <Script id="local-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className={`${locale=="ar"? "justify-end":"justify-start"} relative h-[90vh] w-full flex pb-20 md:pb-0  items-end-safe md:items-center text-white`}>      
         <Image src={heroImg} placeholder="blur"  alt="Clean modern interior" className="absolute inset-0 object-cover  object-[63%] w-full h-full z-0"  fill  priority unoptimized  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"/>
         <div className="absolute inset-0 bg-black/30 md:bg-gradient-to-br from-1% to-30% from-white/30  to-black/30  z-10"></div>

@@ -8,8 +8,6 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 
-
-
 const manrope = Manrope({
   variable: "--font-manrope",
   weight: ['400', '500', '600','700'],
@@ -25,18 +23,20 @@ const scheherazade_new=Scheherazade_New({
   weight:['400','500','600','700'],
   subsets:['arabic']
 })
+
 export const metadata: Metadata = {
-  title: {default:"Cleaning Llama - Saudi Arabia's Trusted Cleaning Service",template:"%s | Cleaning Llama"},
-  description: "Saudi Arabia’s trusted home & facility experts. 30 years exp. We offer furniture cleaning, AC maintenance, pest control, & hourly housekeeping by professional Indian teams.",
+  title: {default:"Cleaning Lama Riyadh",template:"%s | Cleaning Lama Riyadh"},
+  description: "Saudi Arabia’s trusted home & facility experts. 30 years exp. We offer furniture cleaning, AC maintenance, pest control, hourly housekeeping and masjid cleaning services by professional Indian teams.",
   icons: {
     icon: "/icon.png",
-    apple: "/icon.png",
   },
   metadataBase: new URL("https://cleaningllamaksa.com/"),
   keywords: [
     // Brand & Location
-    'Cleaning Llama',
+    'Cleaning Lama',
+    'Cleaning Lama Riyadh',
     'Cleaning Services Riyadh',
+    'Cleaning Services Saudi Arabia',
     'Facility Management Saudi Arabia',
     
     // The "Maid" Replacements
@@ -52,6 +52,7 @@ export const metadata: Metadata = {
     'Split AC Maintenance',
     'Pest Control Services KSA',
     'Cockroach and Bed Bug Control',
+    'Masjid Cleaning Services',
     
     // "Rehabilitation" synonyms (What people actually search)
     'Rehabilitation Cleaning',
@@ -61,7 +62,12 @@ export const metadata: Metadata = {
     // Moving & Maintenance
     'Furniture Moving Service',
     'Home Maintenance Riyadh',
-    'Handyman Services KSA'
+    'Handyman Services KSA',
+
+    'Masjid Cleaning Services Riyadh',
+    'Mosque Carpet Cleaning KSA',
+    'Wudu Area Sanitization',
+    'Prayer Hall Deep Cleaning',
   ],
   robots: {
     index: true,
@@ -75,22 +81,19 @@ export const metadata: Metadata = {
     },
   },
 };
-
 export default async function RootLayout({
   children,
   params
 }: Readonly<{
-  children: React.ReactNode;
+   children: React.ReactNode;
    params: Promise<{locale: string}>;
 }>) {
   const {locale} = await params;
   if(!hasLocale(routing.locales,locale)){
     notFound()
   }
-  
   const classNames=locale=="en" ? `${manrope.variable}  font-manrope en_h1` : `${scheherazade_new.variable} font-scheherazade-new`
   return (
-
     <html>
       <body
         className={`${classNames} ${urbanist.variable} relative overflow-x-hidden antialiased bg-slate-100`}>
