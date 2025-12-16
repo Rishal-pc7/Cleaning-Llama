@@ -15,7 +15,7 @@ function Navbar({locale}:{locale:string}) {
     <NavbarClient>
       <MobNav  locale={locale}/>
       <div className="logo w-[50%] justify-center md:hidden items-center flex">
-        <Image src='/moblogo.png' alt='Cleaning Lama' className='w-[90px] h-auto' width={100} height={40}/>
+        <Image src='/logo.png' alt='Cleaning Lama' className='w-[90px] h-auto' width={100} height={40}/>
       </div>
       <Navlinks  locale={locale} classes='md:flex  hidden w-full justify-between'/>
       <LangButton classes={"md:hidden flex"} val={locale=="ar"?"en":"ar"}/>

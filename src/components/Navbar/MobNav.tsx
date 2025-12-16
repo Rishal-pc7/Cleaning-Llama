@@ -21,7 +21,7 @@ function MobNav({locale}:{locale:string}) {
       </SheetTrigger>
       <SheetContent className="backdrop-blur-lg bg-white/5 border items border-white/30 text-white">
         <SheetHeader>
-          <SheetTitle className="flex justify-center"><Image alt="cleaning LLama" src="/moblogo.png" width={200} height={50}></Image></SheetTitle>
+          <SheetTitle className="flex justify-center"><Image alt="cleaning LLama" src="/logo.png" width={200} height={50}></Image></SheetTitle>
         </SheetHeader>
         <Navlinks locale={locale} classes="md:hidden flex flex-col gap-6 p-8 gap-2 md:p-0 h-[75%]"/>
       <SheetFooter className="bottom-10 flex justify-center flex-row">
