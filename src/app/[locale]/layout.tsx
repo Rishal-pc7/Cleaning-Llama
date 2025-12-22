@@ -112,9 +112,10 @@ export async function generateMetadata ({params}:Readonly<{params:Promise<{ loca
     ,
     openGraph: {
       title: isEn ? "Cleaning Lama Riyadh" : 'كلينينج لاما الرياض',
-      description: isEn 
-        ? "أفضل خدمات التنظيف والصيانة في الرياض بأسعار تنافسية." 
-        : "Professional cleaning and maintenance services in Riyadh.",
+      description: isEn ? 
+                        "Saudi Arabia’s trusted home & facility experts. 30 years exp. We offer furniture cleaning, AC maintenance, pest control, hourly housekeeping and masjid cleaning services by professional Indian teams." 
+                        :  
+                        "خبراء موثوقون في مجال خدمات المنازل والمرافق في المملكة العربية السعودية. خبرة 30 عامًا. نقدم خدمات تنظيف الأثاث، وصيانة مكيفات الهواء، ومكافحة الحشرات، وخدمات التنظيف بالساعة، وتنظيف المساجد، على أيدي فرق هندية محترفة.",
       url: `https://cleaningllamaksa.com/`,
       siteName: "Cleaning Lama Riyadh",
       locale: isEn ? 'en_US' : 'ar_SA', // Dynamically sets the language flag
