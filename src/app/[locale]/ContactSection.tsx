@@ -30,6 +30,14 @@ function ContactSection({locale}:{locale:string}) {
               <p className="font-medium text-base md:text-lg text-brandBlue">
                 {t('desc2')}
               </p>
+              <Link 
+                href="tel:+966123456789" 
+                className="font-bold text-lg md:text-xl text-brandCyan hover:text-brandBlue"
+              >
+                {locale=="ar" &&  <span className="mr-2 font-urbanist">+966 50 025 3511</span> }
+                 {t('phone')} 
+                {locale=="en" &&  <span className="ml-1 font-urbanist">+966 50 025 3511</span> }
+              </Link>
               <Link href={"/contact"} className="rounded-md mt-5 bg-brandCyan text-white p-2 font-semibold w-fit text-center text-lg ">
                 {t('pageHeading')}
               </Link>
