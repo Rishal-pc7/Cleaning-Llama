@@ -31,7 +31,7 @@ function ContactSection({locale}:{locale:string}) {
                 {t('desc2')}
               </p>
               <Link 
-                href="tel:+966123456789" 
+                href="tel:+966500253511" 
                 className="font-bold text-lg md:text-xl text-brandCyan hover:text-brandBlue"
               >
                 {locale=="ar" &&  <span className="mr-2 font-urbanist">+966 50 025 3511</span> }

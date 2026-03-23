@@ -83,6 +83,7 @@
   },
   "popup":{
     "whatsapp":"Whatsapp Booking",
-    "request":"Request Service"
+    "request":"Request Service",
+    "phone":"Call us"
   }  
 }
